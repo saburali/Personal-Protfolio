@@ -28,6 +28,7 @@ section {
     height: 500px;
 }
 
+.halt-width img,
 .info-content {
     margin: 0;
     top: 50%;
@@ -48,20 +49,33 @@ section {
     color: #707070;
 }
 
-
-/***********************        Header Section Start 
-************************/
-.header {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(images/background-image/header-bg.png);
-}
-
-.header .info-content h3 {
+section:nth-child(1) .info-content h3,
+section:nth-child(2) .info-content h3 {
     font-size: 30px;
     margin-bottom: 0px;
     font-weight: 400;
+}
+
+section:nth-child(1) .info-content p,
+section:nth-child(2) .info-content p {
+    margin: 0;
+    font-size: 20px;
+    min-width: 500px;
+}
+
+.header,
+.biography {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/***********************        
+  Header Section Start 
+************************/
+.header {
+    background-image: url(images/background-image/header-bg.png);
 }
 
 .header .info-content h2 {
@@ -71,13 +85,27 @@ section {
     font-weight: 700;
 }
 
-.header .info-content p {
-    margin: 0;
-    font-size: 20px;
-    min-width: 500px;
-}
-
 /* Header Image */
 section.header .halt-width:last-child {
     text-align: center;
+}
+
+
+/***********************        
+ Biography Section Start 
+************************/
+.biography {
+    background-image: url(images/background-image/biography-bg.png);
+}
+.biography img {
+    width: auto;
+}
+
+section:nth-child(2) .info-content p:last-child {
+    text-align: justify;
+}
+
+p.small-text {
+    color: #ec4c7a;
+    margin: 20px 0 10px !important;
 }
