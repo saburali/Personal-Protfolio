@@ -76,7 +76,8 @@ section:nth-child(2) .info-content p {
 }
 
 .header,
-.biography {
+.biography,
+.latest-work {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -103,7 +104,7 @@ section.header .halt-width:last-child {
 }
 
 
-/***********************        
+/*********************** 
  Biography Section Start 
 ************************/
 .biography {
@@ -125,4 +126,31 @@ section:nth-child(2) .info-content p:last-child {
 p.small-text {
     color: #ec4c7a;
     margin: 20px 0 10px !important;
+}
+
+
+/*********************** 
+ Latest Work Section Start 
+************************/
+section:nth-child(3) {
+    height: 60vh;
+}
+
+.latest-work {
+    background-image: url(images/background-image/latest-work-bg.png);
+}
+
+.latest-work h2 {
+    text-align: center;
+    margin-bottom: 42px;
+    font-size: 30px;
+}
+
+.latest-work .img-thamble {
+    width: 33.333333%;
+    float: left;
+}
+
+.latest-work .img-thamble img {
+    width: 90%;
 }
