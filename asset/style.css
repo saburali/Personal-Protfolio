@@ -9,6 +9,7 @@ body {
     padding: 0;
     height: 100%;
     color: #333333;
+    overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -124,24 +125,6 @@ section:nth-child(3) .info-content p {
 
 .menu a:hover {
     opacity: 1;
-}
-
-/* Toggle Button */
-.chk-btn {
-    float: right;
-}
-
-.chk-btn img {
-    width: 22px;
-    margin-top: 38px;
-    display: none;
-}
-
-#chk {
-    position: absolute;
-    /* checkbox hide */
-    z-index: -9;
-    visibility: hidden;
 }
 
 
