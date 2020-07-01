@@ -79,7 +79,8 @@ section:nth-child(3) .info-content p {
 .banner,
 .biography,
 .latest-work,
-.skill-secton {
+.skill-secton,
+.contact {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -293,7 +294,9 @@ section:nth-child(5) {
 section:nth-child(6) {
     height: 50vh;
     padding-top: 9%;
+    overflow: hidden;
 }
+
 .skill-secton {
     background-image: url(images/background-image/latest-work-bg.png);
 }
@@ -337,6 +340,120 @@ section:nth-child(6) {
     border-radius: 50%;
     position: absolute;
     background-image: linear-gradient(90deg, #f6af3200, #ed596e);
+}
+
+
+
+/*********************** 
+  Contact Section Start 
+************************/
+section:nth-child(7) {
+    height: 60vh;
+    padding-top: 12%;
+    padding-bottom: 12%;
+    overflow: hidden;
+}
+
+.contact {
+    /*
+     filter: blur(1px);
+  -webkit-filter: blur(1px);
+*/
+    background-image: url(images/background-image/contact-bg.jpg);
+}
+
+.contact h2 {
+    color: #fff;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 42px;
+    font-size: 30px;
+}
+
+.contact-content {
+    position: relative;
+    height: 350px;
+    text-align: center;
+    padding: 50px 80px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: linear-gradient(90deg, #f6af3275, #ed596eed);
+    backdrop-filter: blur(5px);
+}
+
+.contact-content .form-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contact-content .group {
+    width: 40%;
+    float: left;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.contact-content .group:last-child {
+    width: 95%;
+}
+
+.contact-content .group:first-child {
+    margin-right: 100px;
+}
+
+.contact-content .group i {
+    position: absolute;
+    top: 26px;
+    left: 20px;
+    font-size: 20px;
+}
+
+.contact-content input,
+.contact-content textarea {
+    width: 100%;
+    padding: 25px 15px 25px 50px;
+    border-radius: 7px;
+    outline: none;
+    border: 0;
+    opacity: 0.7;
+    font-size: 15px;
+    font-weight: 700;
+    transition: 0.5s;
+    border: 5px solid #00000000;
+}
+
+.contact-content input:hover,
+.contact-content textarea:hover {
+    opacity: 1;
+}
+
+.contact-content input:focus,
+.contact-content textarea:focus {
+    border: 5px solid #ccc;
+    font-weight: 400;
+}
+
+.contact-content .inputBtn {
+    float: right;
+    margin-right: -6%;
+    margin-top: -2%;
+    opacity: 0.7;
+    transition: 0.4s;
+}
+
+.contact-content .inputBtn:hover {
+    opacity: 1;
+}
+
+.contact-content .inputBtn input {
+    padding: 11px 25px;
+}
+
+.contact-content .inputBtn input:hover {
+    cursor: pointer;
 }
 
 
