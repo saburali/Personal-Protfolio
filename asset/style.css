@@ -8,6 +8,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
+    color: #333333;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -76,7 +77,8 @@ section:nth-child(2) .info-content p {
 }
 
 .header,
-.biography {
+.biography,
+.latest-work {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -103,7 +105,7 @@ section.header .halt-width:last-child {
 }
 
 
-/***********************        
+/*********************** 
  Biography Section Start 
 ************************/
 .biography {
@@ -125,4 +127,102 @@ section:nth-child(2) .info-content p:last-child {
 p.small-text {
     color: #ec4c7a;
     margin: 20px 0 10px !important;
+}
+
+
+/*********************** 
+ Latest Work Section Start 
+************************/
+section:nth-child(3) {
+    height: 60vh;
+}
+
+.latest-work {
+    background-image: url(images/background-image/latest-work-bg.png);
+}
+
+.latest-work h2 {
+    text-align: center;
+    margin-bottom: 42px;
+    font-size: 30px;
+}
+
+.latest-work .img-thamble {
+    width: 33.333333%;
+    float: left;
+}
+
+.latest-work .img-thamble img {
+    width: 90%;
+}
+
+
+/*********************** 
+ Client Area Section Start 
+************************/
+.client-area {
+    background-image: url(images/background-image/footer-bg.png)
+}
+
+.client-area h2 {
+    text-align: center;
+    margin-bottom: 42px;
+    font-size: 30px;
+}
+
+.client-area .info {
+    max-width: 35%;
+    margin: auto;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.client-area .info p:first-child {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: -7px;
+}
+
+.client-area .info p:nth-child(2) {
+    margin-bottom: 20px;
+}
+
+.client-area .info p:last-child::after,
+.client-area .info p:last-child::before {
+    content: "**";
+}
+
+.client-area a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.client-area .email-box {
+    padding: 50px;
+    width: 50%;
+    margin: auto;
+    margin-top: 80px;
+    text-align: center;
+    border-radius: 15px;
+    background-image: linear-gradient(45deg, #ec5298, #ed4b72);
+}
+
+.client-area .email-box p {
+    margin: 0 0 20px;
+    font-size: 20px
+}
+
+.client-area .email-box h5 {
+    margin: 0;
+    font-size: 25px
+}
+
+
+/*********************** 
+ Client Area Section Start 
+************************/
+footer {
+    padding: 30px;
+    font-weight: 600; 
+    text-align: center;
 }
