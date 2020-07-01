@@ -1,4 +1,4 @@
-/***********************            Common Style
+/***********************       Common Style
 ************************/
 
 /* Font Include */
@@ -62,21 +62,21 @@ section {
     color: #707070;
 }
 
-section:nth-child(1) .info-content h3,
-section:nth-child(2) .info-content h3 {
+section:nth-child(2) .info-content h3,
+section:nth-child(3) .info-content h3 {
     font-size: 30px;
     margin-bottom: 0px;
     font-weight: 400;
 }
 
-section:nth-child(1) .info-content p,
-section:nth-child(2) .info-content p {
+section:nth-child(2) .info-content p,
+section:nth-child(3) .info-content p {
     margin: 0;
     font-size: 20px;
     min-width: 500px;
 }
 
-.header,
+.banner,
 .biography,
 .latest-work {
     background-position: center;
@@ -85,22 +85,82 @@ section:nth-child(2) .info-content p {
 }
 
 
-/***********************        
-  Header Section Start 
+/*********************** 
+  Navbar Section Start 
 ************************/
 .header {
+    height: 100px;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    color: #fff;
+    background-image: linear-gradient(45deg, #ec5298, #ed4b72);
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+}
+
+.logo {
+    height: 60%;
+    padding: 20px 0;
+}
+
+.menu {
+    float: right;
+    line-height: 66px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 10px;
+    opacity: 0.8;
+    transition: 0.5;
+}
+
+.menu a:hover {
+    opacity: 1;
+}
+
+/* Toggle Button */
+.chk-btn {
+    float: right;
+}
+
+.chk-btn img {
+    width: 22px;
+    margin-top: 38px;
+    display: none;
+}
+
+#chk {
+    position: absolute;
+    /* checkbox hide */
+    z-index: -9;
+    visibility: hidden;
+}
+
+
+
+/*********************** 
+   Banner Section Start 
+************************/
+.banner {
+    margin-top: 20px;
     background-image: url(images/background-image/header-bg.png);
 }
 
-.header .info-content h2 {
+.banner .info-content h2 {
     font-size: 42px;
     margin-top: 10px;
     margin-bottom: 20px;
     font-weight: 700;
 }
 
-/* Header Image */
-section.header .halt-width:last-child {
+/* Banner Image */
+section.banner .halt-width:last-child {
     text-align: center;
 }
 
@@ -120,7 +180,7 @@ section.header .halt-width:last-child {
     text-transform: capitalize;
 }
 
-section:nth-child(2) .info-content p:last-child {
+section:nth-child(3) .info-content p:last-child {
     text-align: justify;
 }
 
@@ -133,8 +193,9 @@ p.small-text {
 /*********************** 
  Latest Work Section Start 
 ************************/
-section:nth-child(3) {
+section:nth-child(4) {
     height: 60vh;
+    padding-top: 9%;
 }
 
 .latest-work {
@@ -160,6 +221,11 @@ section:nth-child(3) {
 /*********************** 
  Client Area Section Start 
 ************************/
+section:nth-child(5) {
+    height: 60vh;
+    padding-top: 9%;
+}
+
 .client-area {
     background-image: url(images/background-image/footer-bg.png)
 }
@@ -223,6 +289,6 @@ section:nth-child(3) {
 ************************/
 footer {
     padding: 30px;
-    font-weight: 600; 
+    font-weight: 600;
     text-align: center;
 }
