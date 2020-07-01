@@ -76,7 +76,7 @@ section:nth-child(2) .info-content p {
     min-width: 500px;
 }
 
-.header,
+.banner,
 .biography,
 .latest-work {
     background-position: center;
@@ -86,21 +86,21 @@ section:nth-child(2) .info-content p {
 
 
 /***********************        
-  Header Section Start 
+  Banner Section Start 
 ************************/
-.header {
+.banner {
     background-image: url(images/background-image/header-bg.png);
 }
 
-.header .info-content h2 {
+.banner .info-content h2 {
     font-size: 42px;
     margin-top: 10px;
     margin-bottom: 20px;
     font-weight: 700;
 }
 
-/* Header Image */
-section.header .halt-width:last-child {
+/* Banner Image */
+section.banner .halt-width:last-child {
     text-align: center;
 }
 
