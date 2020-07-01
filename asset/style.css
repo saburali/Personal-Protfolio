@@ -355,10 +355,6 @@ section:nth-child(7) {
 }
 
 .contact {
-    /*
-     filter: blur(1px);
-  -webkit-filter: blur(1px);
-*/
     background-image: url(images/background-image/contact-bg.jpg);
 }
 
